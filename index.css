@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  background: linear-gradient(135deg, #f5e6d3 0%, #e6d5c3);
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin: 0;
+}
+
+.barra {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.uno {
+  text-decoration: underline;
+}
+
+.contenedor {
+  display: flex;
+  flex: 1;
+  background-color: #dcd4bb;
+  border-radius: 20px;
+}
+
+.nose {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: #ff9ecd;
+}
+
+.fas {
+  font-size: 1.5rem;
+}
+
+.titulon {
+  border-radius: 20px;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 200px;
+  background-image: url(imagenes/fondo3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.titulo {
+  font-size: 7rem;
+  text-align: center;
+  letter-spacing: 2px;
+  text-shadow: black 0 2px;
+  font-family: "Sarina", cursive;
+}
+
+.sabor {
+  text-align: center;
+}
+
+.sabor a:hover{
+  color: rgb(230, 112, 200) ;
+}
+
+.saboron {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 5px;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  justify-content: center;
+}
+footer {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 0.8rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6vh;
+  border-radius: 15px;
+}
+
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+  color: black;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  color: rgb(230, 112, 200);
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
+.website {
+  font-size: 0.95rem;
+  color: #555;
+  font-weight: 500;
+}
+
+  
