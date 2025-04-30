@@ -1,37 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="formulario.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="formulario.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <section id="formulario">
-  
-            <form action="https://formspree.io/f/xgvozdlp" method="POST">
+      <form action="php/compra.php" method="post">
         <div class="centro">
-            <input type="text" placeholder="Nombre completo" required name="Nombre">
-            <input type="tel" placeholder="Teléfono" required name="Teléfono">
-            <input type="text" placeholder="Dirección de entrega" required name="Dirección">
-            <input type="text" placeholder="Sabor de helado" required name="Sabor">
-            <input type="text" placeholder="Tamaño" required name="Tamaño">
-            <input type="text" placeholder="Presentación (Cono/Vaso)" required name="Presentación">
-            
+          <input
+            type="text"
+            placeholder="Nombre completo"
+            required
+            name="nombre"
+          />
+          <input type="tel" placeholder="Teléfono" required name="telefono" />
+          <input
+            type="text"
+            placeholder="Dirección de entrega"
+            required
+            name="direccion"
+          />
+          <input
+            type="text"
+            placeholder="Sabor de helado"
+            required
+            name="sabor"
+          />
+          <input type="text" placeholder="Tamaño" required name="tamaño" />
+          <input
+            type="text"
+            placeholder="Presentación (Cono/Vaso)"
+            required
+            name="presentacion"
+          />
 
-            <h3>Detalles de pago</h3>
-            <input type="text" placeholder="Número de tarjeta" required name="Tarjeta">
-            <input type="text" placeholder="Fecha de vencimiento (MM/AA)" required name="Fecha">
-            <input type="text" placeholder="CVV" required name="Cvv">
-        </div>  
+          <h3>Detalles de pago</h3>
+          <input
+            type="text"
+            placeholder="Número de tarjeta"
+            required
+            name="tarjeta"
+          />
+          <input
+            type="date"
+            placeholder="Fecha de vencimiento (MM/AA)"
+            required
+            name="fecha_vencimiento"
+          />
+          <input type="text" placeholder="CVV" required name="cvv" />
+        </div>
 
         <button type="submit" name="Registro">Finalizar compra</button>
-
-            </form>
+      </form>
     </section>
-    
-</body>
+  </body>
 </html>

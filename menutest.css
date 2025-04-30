@@ -11,6 +11,8 @@ body {
   gap: 15px;
   padding: 20px;
   background: linear-gradient(135deg, #f5e6d3 0%, #e6d5c3);
+  user-select: none;
+  pointer-events: auto;
 }
 
 header {
@@ -113,4 +115,47 @@ a {
   font-size: 4rem;
   font-family: "Pacifico", cursive;
   color: rgb(94, 50, 57);
+}
+
+a:focus,
+button:focus,
+input:focus {
+  outline: 3px solid #ff9ecd;
+  outline-offset: 3px;
+  transition: outline 0.2s ease;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #ff9ecd;
+  outline: none !important;
+}
+
+@media (max-width: 768px) {
+  
+  .menu-toggle {
+    display: block;
+  }
+
+  .barra {
+    display: none;
+    flex-direction: column;
+    width: 200px;
+    background: rgba(255, 255, 255, 0.95);
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+  }
+
+  .barra.active {
+    display: flex;
+  }
 }

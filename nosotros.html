@@ -16,8 +16,8 @@
       <i class="fa fa-ice-cream"></i>
       <h2 class="slogan">Muy Rico</h2>
     </div>
-
-    <ul>
+    <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+    <ul class="barra">
       <li><a href="index.html">Inicio</a></li>
       <li><a href="nosotros.html" class="active">Nosotros</a></li>
       <li><a href="menutest.html">Menu</a></li>
@@ -69,6 +69,14 @@
       <div class="website">www.riodesabores.com</div>
     </footer>
   </div>
+  <script>
+    const toggleBtn = document.querySelector(".menu-toggle");
+    const navMenu = document.querySelector(".barra");
+
+    toggleBtn.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+    });
+  </script>
 </body>
 
 </html>

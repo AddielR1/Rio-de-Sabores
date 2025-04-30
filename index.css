@@ -9,8 +9,11 @@ body {
   flex-direction: column;
   gap: 15px;
   padding: 20px;
+  height: 100vh;
   background: linear-gradient(135deg, #f5e6d3 0%, #e6d5c3);
   font-family: "Poppins", sans-serif;
+  user-select: none;
+  pointer-events: auto;
 }
 
 header {
@@ -45,7 +48,6 @@ a {
 .contenedor {
   display: flex;
   flex: 1;
-  background-color: #dcd4bb;
   border-radius: 20px;
 }
 
@@ -62,14 +64,16 @@ a {
 
 .titulon {
   border-radius: 20px;
-  flex: 1;
   justify-content: center;
   align-items: center;
-  padding: 200px;
+  text-align: center;
+  height: 500px;
+  width: 100%;
   background-image: url(imagenes/fondo3.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 
 .titulo {
   font-size: 7rem;
@@ -79,12 +83,14 @@ a {
   font-family: "Sarina", cursive;
 }
 
+
+
 .sabor {
   text-align: center;
 }
 
-.sabor a:hover{
-  color: rgb(230, 112, 200) ;
+.sabor a:hover {
+  color: rgb(230, 112, 200);
 }
 
 .saboron {
@@ -102,9 +108,9 @@ footer {
   background: rgba(255, 255, 255, 0.9);
   padding: 0.8rem 1.5rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  height: 6vh;
   border-radius: 15px;
 }
 
@@ -128,4 +134,55 @@ footer {
   font-weight: 500;
 }
 
-  
+a:focus,
+button:focus,
+input:focus {
+  outline: 3px solid #ff9ecd;
+  outline-offset: 3px;
+  transition: outline 0.2s ease;
+}
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #ff9ecd;
+  outline: none !important;
+}
+@media (max-width: 500px) {
+  footer {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .titulo > span {
+    font-size: 10vmin;
+  }
+  footer {
+    gap: 15px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .barra {
+    display: none;
+    flex-direction: column;
+    width: 200px;
+    background: rgba(255, 255, 255, 0.95);
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+  }
+
+  .barra.active {
+    display: flex;
+  }
+}

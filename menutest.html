@@ -21,7 +21,7 @@
       <i class="fas fa-ice-cream"></i>
       <h2>Muy Rico</h2>
     </div>
-
+    <button class="menu-toggle"><i class="fas fa-bars"></i></button>
     <ul class="barra">
       <li><a href="index.html">Inicio</a></li>
       <li><a href="nosotros.html">Nosotros</a></li>
@@ -558,6 +558,14 @@
       </div>
     </div>
   </main>
+  <script>
+    const toggleBtn = document.querySelector(".menu-toggle");
+    const navMenu = document.querySelector(".barra");
+
+    toggleBtn.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+    });
+  </script>
 </body>
 
 </html>
